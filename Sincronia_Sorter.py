@@ -196,7 +196,7 @@ def filtro2():
     final_dados = final_dados.drop(labels="Ir Para", axis=1)
 
     final_dados2 = pd.DataFrame(final_dados)
-    final_dados["Qtd Pç"] = filtroX["Quantidade (pç)"]
+    final_dados["Quantidade (pç)"] = filtroX["Quantidade (pç)"]
     final_dados2 = pd.concat([final_dados, tabela4_1])
     final_dados2 = final_dados2.fillna("")
     final_dados2 = pd.DataFrame(final_dados2)
