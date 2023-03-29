@@ -59,7 +59,7 @@ texto4.adjustSize()
 
 
 digit2 = QLineEdit("", janela)
-digit2.setPlaceholderText('                    Ex. CX_SR_FL15_230303')
+digit2.setPlaceholderText('                     Ex. CX_SR_FL15_230303')
 digit2.setGeometry(110, 260, 250, 30)
 
 a = 0
