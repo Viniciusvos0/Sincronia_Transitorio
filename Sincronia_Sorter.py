@@ -10,15 +10,12 @@ app = QApplication(sys.argv)
 
 arquivo = 0
 
-
 def openfile():
     filepath = filedialog.askopenfilename()
     global arquivo
     arquivo = filepath
 
-
 arquivo2 = 0
-
 
 def openfile2():
     filepath2 = filedialog.askopenfilename()
@@ -38,7 +35,6 @@ button2 = QPushButton("Abrir LPN.xlsx", janela)
 button2.setGeometry(140, 180, 200, 30)
 button2.clicked.connect(openfile2)
 
-
 texto2 = QLabel("DIGITE A ONDA", janela)
 texto2.move(200, 230)
 texto2.adjustSize()
@@ -57,20 +53,14 @@ texto4 = QLabel(
 texto4.move(40, 150)
 texto4.adjustSize()
 
-
 digit2 = QLineEdit("", janela)
 digit2.setPlaceholderText('                     Ex. CX_SR_FL15_230303')
 digit2.setGeometry(110, 260, 250, 30)
 
-a = 0
-
 
 def filtro():
     pd.set_option('display.precision', 0)
-    global a
-    conteudo = digit2.text()
-    a = conteudo
-    onda = a
+    onda = digit2.text()
     tabela = pd.read_excel(arquivo, dtype=str)
     tabela["Quantidade (pç)"] = pd.to_numeric(tabela["Quantidade (pç)"])
     filtro_onda = tabela.loc[tabela['Nr. Controle 2'].str.contains(f'{onda}'), [
@@ -136,10 +126,7 @@ def filtro():
 
 def filtro2():
     pd.set_option('display.precision', 0)
-    global a
-    conteudo = digit2.text()
-    a = conteudo
-    onda = a
+    onda = digit2.text()
     tabela = pd.read_excel(arquivo, dtype=str)
     tabela["Quantidade (pç)"] = pd.to_numeric(tabela["Quantidade (pç)"])
     filtro_onda = tabela.loc[tabela['Nr. Controle 2'].str.contains(f'{onda}'), [
