@@ -10,12 +10,15 @@ app = QApplication(sys.argv)
 
 arquivo = 0
 
+
 def openfile():
     filepath = filedialog.askopenfilename()
     global arquivo
     arquivo = filepath
 
+
 arquivo2 = 0
+
 
 def openfile2():
     filepath2 = filedialog.askopenfilename()
@@ -41,7 +44,7 @@ texto2.adjustSize()
 
 texto = QLabel("SINCRONIA", janela)
 texto.move(194, 25)
-texto.setStyleSheet("QLabel{font-size: 18px;}")
+texto.setStyleSheet("QLabel{font-size: 19px;}")
 
 texto3 = QLabel(
     '1. Selecione o arquivo "Rastreabilidade.xlsx" mais recente na pagina de Download', janela)
