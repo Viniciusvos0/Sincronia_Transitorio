@@ -1,4 +1,5 @@
-![IMG_Sistem](https://user-images.githubusercontent.com/123049506/228610246-ba672f6f-7327-47a0-be00-33e4d6ccd263.png)
+
+<img width="827" alt="228610246-ba672f6f-7327-47a0-be00-33e4d6ccd263" src="https://github.com/Viniciusvos0/sincronia_transitorio/assets/123049506/0d1e60ec-d25d-4737-8959-730c9af78a68">
 # sincronia_transitorio
 Software de manipulação de tabelas para otimização de processos especifícos de uma empresa
 
